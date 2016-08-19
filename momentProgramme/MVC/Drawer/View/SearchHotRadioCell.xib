@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchHotRadioCell" rowHeight="66" id="bZe-Ah-p1J" customClass="SearchHotRadioCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="66"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bZe-Ah-p1J" id="8xU-Yg-cXw">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="65.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Radio_Play" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-5b-Hxy">
+                        <rect key="frame" x="23" y="13" width="39.5" height="39.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="qX4-5b-Hxy" secondAttribute="height" multiplier="1:1" id="MFP-Uk-xFa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKo-at-LAL">
+                        <rect key="frame" x="82" y="24" width="284.5" height="17"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.61176470588235299" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iv-Z7-xYO">
+                        <rect key="frame" x="8" y="64.5" width="382" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="NeD-x9-L83"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="OKo-at-LAL" firstAttribute="centerY" secondItem="qX4-5b-Hxy" secondAttribute="centerY" id="1Xc-ZZ-qKy"/>
+                    <constraint firstItem="OKo-at-LAL" firstAttribute="leading" secondItem="qX4-5b-Hxy" secondAttribute="trailing" constant="20" id="3iD-W5-imw"/>
+                    <constraint firstItem="qX4-5b-Hxy" firstAttribute="leading" secondItem="8xU-Yg-cXw" secondAttribute="leadingMargin" constant="15" id="9uW-tN-MC5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6iv-Z7-xYO" secondAttribute="trailing" constant="-8" id="G3f-aP-cTm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OKo-at-LAL" secondAttribute="trailing" constant="15" id="JCJ-Pf-gPm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="qX4-5b-Hxy" secondAttribute="bottom" constant="5" id="PMI-Q8-Nu4"/>
+                    <constraint firstItem="6iv-Z7-xYO" firstAttribute="leading" secondItem="8xU-Yg-cXw" secondAttribute="leadingMargin" id="p1o-mF-IQD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6iv-Z7-xYO" secondAttribute="bottom" constant="-8" id="qfw-UX-ydX"/>
+                    <constraint firstItem="qX4-5b-Hxy" firstAttribute="top" secondItem="8xU-Yg-cXw" secondAttribute="topMargin" constant="5" id="suF-Jv-Fvx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="title" destination="OKo-at-LAL" id="uxI-Jc-RO7"/>
+            </connections>
+            <point key="canvasLocation" x="750" y="271"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Radio_Play" width="100" height="100"/>
+    </resources>
+</document>

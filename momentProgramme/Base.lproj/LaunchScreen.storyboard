@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIECES" translatesAutoresizingMaskIntoConstraints="NO" id="EpT-ta-aWg">
+                                <rect key="frame" x="46" y="170" width="228" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EpT-ta-aWg" secondAttribute="height" multiplier="1:0.3" id="pGD-BL-Cc0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I WAS DREAMING ABOUT A DREAM, THEY CALL IT LOVE." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv6-AL-VgV">
+                                <rect key="frame" x="46" y="461" width="228" height="72"/>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EpT-ta-aWg" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="150" id="7on-Ft-rOu"/>
+                            <constraint firstItem="iv6-AL-VgV" firstAttribute="leading" secondItem="EpT-ta-aWg" secondAttribute="leading" id="9q9-SU-xDQ"/>
+                            <constraint firstItem="EpT-ta-aWg" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="Jq9-z4-CL3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EpT-ta-aWg" secondAttribute="trailing" constant="30" id="gbU-P5-Gg3"/>
+                            <constraint firstItem="iv6-AL-VgV" firstAttribute="width" secondItem="EpT-ta-aWg" secondAttribute="width" id="q4v-4J-faO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iv6-AL-VgV" secondAttribute="bottom" constant="35" id="qqy-aj-XRJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PIECES" width="281" height="68"/>
+    </resources>
+</document>

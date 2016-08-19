@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="RadioModel" representedClassName="RadioModel" syncable="YES">
+        <attribute name="iconAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="musicUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharepic" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharetext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shareurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ting_contentid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tingid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uidAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uidUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unameAuthor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unameUser" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="webview_url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TopicModel" representedClassName="TopicModel" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contentid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserModel" representedClassName="UserModel" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="UserModel" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="TopicModel" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="RadioModel" positionX="-36" positionY="45" width="128" height="270"/>
+    </elements>
+</model>
