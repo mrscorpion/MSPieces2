@@ -124,6 +124,7 @@
                        
                        //将获取的data本地保存到plist文件当中
                        [[NSUserDefaults standardUserDefaults] setObject:imageData forKey:LAUNCHING_IMAGEVIEW_NAME];
+                       [[NSUserDefaults standardUserDefaults] synchronize];
                        
                    } failure:^(NSError *error) {
                        //网络请求失败后的block回调
